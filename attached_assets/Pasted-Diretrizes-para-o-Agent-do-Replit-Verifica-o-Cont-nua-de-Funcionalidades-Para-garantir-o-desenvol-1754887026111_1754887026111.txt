@@ -1,0 +1,37 @@
+Diretrizes para o Agent do Replit: Verificação Contínua de Funcionalidades
+Para garantir o desenvolvimento eficiente e alinhado com os objetivos do projeto do sistema de compras, o Agent do Replit deverá seguir as seguintes diretrizes para a verificação contínua das funcionalidades:
+1. Escopo da Verificação
+O Agent deverá verificar todas as funcionalidades do sistema de compras, conforme detalhado nos documentos de especificação (sistema_compras_ideal.md e sistema_compras_integracao.md). Isso inclui, mas não se limita a:
+
+Gestão de Requisições (criação, aprovação, rastreamento)
+Gestão de Cotações (solicitação, comparação, negociação)
+Gestão de Fornecedores (cadastro, qualificação, avaliação)
+Gestão de Pedidos de Compra (geração, envio, recebimento)
+Relatórios e Análises (dashboards, geração de relatórios)
+Integrações (Google Sheets, Docx, API do Grok)
+2. Frequência da Verificação
+A verificação deverá ser realizada de forma contínua, idealmente após cada ciclo de desenvolvimento ou sempre que houver uma alteração significativa no código-base. Para projetos em andamento, uma verificação diária ou a cada nova funcionalidade implementada é recomendada.
+3. Metodologia de Verificação
+O Agent deverá empregar uma metodologia de verificação sistemática, que inclua:
+3.1. Análise de Código
+Revisão de Implementação: Verificar se o código implementado corresponde às especificações da funcionalidade. Isso inclui a lógica de negócios, a manipulação de dados e a interação com outros módulos.
+Identificação de Erros e Bugs: Procurar por erros de sintaxe, lógica, potenciais bugs e vulnerabilidades de segurança no código.
+Conformidade com Padrões: Assegurar que o código segue os padrões de codificação definidos para o projeto (ex: PEP 8 para Python, convenções de nomenclatura, etc.).
+3.2. Testes Automatizados
+Execução de Testes Unitários: Rodar todos os testes unitários existentes para as funcionalidades e reportar quaisquer falhas.
+Execução de Testes de Integração: Verificar a comunicação entre os módulos e as integrações externas (APIs, Google Sheets, Docx) para garantir que os dados fluam corretamente.
+Geração de Casos de Teste (se aplicável): Sugerir ou gerar novos casos de teste para funcionalidades recém-implementadas ou áreas críticas do sistema.
+3.3. Verificação de Funcionalidades
+Simulação de Fluxos de Usuário: Simular o uso das funcionalidades como um usuário final faria, verificando se o comportamento do sistema está de acordo com o esperado.
+Validação de Saídas: Confirmar se as saídas geradas pelo sistema (ex: documentos Docx, dados em Google Sheets, relatórios) estão corretas e formatadas adequadamente.
+Verificação de Integrações: Testar ativamente as integrações para garantir que a comunicação com Google Sheets, Docx e a API do Grok esteja funcionando sem problemas.
+4. Relatório de Status
+Após cada verificação, o Agent deverá gerar um relatório de status claro e conciso, que inclua:
+
+Funcionalidades Verificadas: Lista das funcionalidades que foram testadas.
+Status (Funcionando/Falta Implementar/Com Problemas): Indicação clara do status de cada funcionalidade.
+Detalhes de Problemas: Para funcionalidades com problemas, uma descrição detalhada do erro, incluindo logs, mensagens de erro e passos para reprodução.
+Sugestões de Próximos Passos: Recomendações para as próximas ações, como correção de bugs, implementação de funcionalidades pendentes ou otimizações.
+5. Comunicação e Ação
+O Agent deverá comunicar o relatório de status ao desenvolvedor ou à equipe responsável. Em caso de problemas críticos, o Agent deverá alertar imediatamente. O objetivo é que o Agent atue como um assistente proativo, garantindo a qualidade e o progresso do desenvolvimento do sistema de compras.
+

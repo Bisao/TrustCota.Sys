@@ -1,0 +1,40 @@
+
+> rest-express@1.0.0 dev
+> NODE_ENV=development tsx server/index.ts
+
+Demo data already exists, skipping seed.
+7:11:25 AM [express] serving on port 5000
+Browserslist: browsers data (caniuse-lite) is 10 months old. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+7:11:28 AM [express] GET /api/user 401 in 2ms
+7:11:31 AM [express] GET /api/user 304 in 133ms :: {"id":"f29fff3e-477d-4b8b-af1d-934c3184f7ff","use…
+7:11:32 AM [express] GET /api/suppliers 304 in 172ms :: [{"id":"6d542351-05ef-4072-97e2-b0e6da3fed6b…
+7:11:32 AM [express] GET /api/activities 304 in 174ms :: []
+7:11:32 AM [express] GET /api/requisitions 304 in 179ms :: []
+7:11:32 AM [express] GET /api/dashboard/stats 304 in 311ms :: {"pendingRequisitions":0,"totalSavings…
+7:11:58 AM [express] GET /api/purchase-orders 200 in 336ms :: []
+7:12:00 AM [express] GET /api/quotes 304 in 191ms :: []
+7:15:37 AM [vite] hmr update /src/App.tsx?v=CNCjZD1MBcjJRue4ZBzo5, /src/index.css?v=CNCjZD1MBcjJRue4ZBzo5
+7:15:38 AM [vite] hmr update /src/components/layout/sidebar.tsx, /src/index.css?v=CNCjZD1MBcjJRue4ZBzo5
+7:15:38 AM [vite] hmr update /src/components/layout/header.tsx, /src/index.css?v=CNCjZD1MBcjJRue4ZBzo5
+7:15:38 AM [vite] hmr update /src/pages/suppliers.tsx, /src/index.css?v=CNCjZD1MBcjJRue4ZBzo5
+7:15:40 AM [vite] Internal server error: Failed to resolve import "react-i18next" from "client/src/pages/suppliers.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/runner/workspace/client/src/pages/suppliers.tsx:13:31
+  27 |  import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
+  28 |  import SupplierForm from "@/components/suppliers/supplier-form";
+  29 |  import { useTranslation } from "react-i18next";
+     |                                  ^
+  30 |  export default function Suppliers() {
+  31 |    _s();
+      at TransformPluginContext._formatError (/home/runner/workspace/node_modules/vite/dist/node/chunks/dep-C6uTJdX2.js:49258:41)
+      at TransformPluginContext.error (/home/runner/workspace/node_modules/vite/dist/node/chunks/dep-C6uTJdX2.js:49253:16)
+      at normalizeUrl (/home/runner/workspace/node_modules/vite/dist/node/chunks/dep-C6uTJdX2.js:64291:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async <anonymous> (/home/runner/workspace/node_modules/vite/dist/node/chunks/dep-C6uTJdX2.js:64423:39)
+      at async Promise.all (index 14)
+      at async TransformPluginContext.transform (/home/runner/workspace/node_modules/vite/dist/node/chunks/dep-C6uTJdX2.js:64350:7)
+      at async PluginContainer.transform (/home/runner/workspace/node_modules/vite/dist/node/chunks/dep-C6uTJdX2.js:49099:18)
+      at async loadAndTransform (/home/runner/workspace/node_modules/vite/dist/node/chunks/dep-C6uTJdX2.js:51977:27)
+      at async viteTransformMiddleware (/home/runner/workspace/node_modules/vite/dist/node/chunks/dep-C6uTJdX2.js:62105:24)
