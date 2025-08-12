@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0 0% 100%);
+  --foreground: hsl(210 7% 8.6%);
+  --card: hsl(0 0% 100%);
+  --card-foreground: hsl(210 7% 8.6%);
+  --popover: hsl(0 0% 100%);
+  --popover-foreground: hsl(210 7% 8.6%);
+  --primary: hsl(215 100% 52.9%);
+  --primary-foreground: hsl(0 0% 100%);
+  --secondary: hsl(210 7% 8.6%);
+  --secondary-foreground: hsl(0 0% 100%);
+  --muted: hsl(210 40% 96.1%);
+  --muted-foreground: hsl(210 7% 55.3%);
+  --accent: hsl(210 40% 96.1%);
+  --accent-foreground: hsl(215 100% 52.9%);
+  --destructive: hsl(0 84% 60.2%);
+  --destructive-foreground: hsl(0 0% 100%);
+  --border: hsl(220 13% 87.8%);
+  --input: hsl(220 13% 91%);
+  --ring: hsl(215 100% 52.9%);
+  --chart-1: hsl(215 100% 52.9%);
+  --chart-2: hsl(142 76% 36.3%);
+  --chart-3: hsl(47 96% 53.3%);
+  --chart-4: hsl(142 69% 58%);
+  --chart-5: hsl(340 75% 55.7%);
+  --sidebar: hsl(0 0% 100%);
+  --sidebar-foreground: hsl(210 7% 8.6%);
+  --sidebar-primary: hsl(215 100% 52.9%);
+  --sidebar-primary-foreground: hsl(0 0% 100%);
+  --sidebar-accent: hsl(210 40% 96.1%);
+  --sidebar-accent-foreground: hsl(215 100% 52.9%);
+  --sidebar-border: hsl(220 13% 87.8%);
+  --sidebar-ring: hsl(215 100% 52.9%);
+  --font-sans: 'Inter', sans-serif;
+  --font-serif: Georgia, serif;
+  --font-mono: ui-monospace, SFMono-Regular, 'SF Mono', Consolas, 'Liberation Mono', Menlo, monospace;
+  --radius: 0.75rem;
+  
+  /* Procurement-specific colors */
+  --procurement-background: hsl(215 28% 97.1%);
+  --procurement-success: hsl(142 76% 36.3%);
+  --procurement-warning: hsl(47 96% 53.3%);
+  --procurement-error: hsl(0 84% 60.2%);
+  --procurement-gray-100: hsl(210 7% 8.6%);
+  --procurement-gray-80: hsl(210 7% 22.4%);
+  --procurement-gray-70: hsl(210 7% 32.2%);
+  --procurement-gray-50: hsl(210 7% 55.3%);
+  --procurement-gray-30: hsl(210 13% 77.8%);
+  --procurement-gray-20: hsl(220 13% 87.8%);
+  --procurement-gray-10: hsl(210 40% 96.1%);
+}
+
+.dark {
+  --background: hsl(0 0% 0%);
+  --foreground: hsl(210 40% 90.2%);
+  --card: hsl(210 7% 9.8%);
+  --card-foreground: hsl(0 0% 90.2%);
+  --popover: hsl(0 0% 0%);
+  --popover-foreground: hsl(210 40% 90.2%);
+  --primary: hsl(215 100% 52.9%);
+  --primary-foreground: hsl(0 0% 100%);
+  --secondary: hsl(210 40% 94.1%);
+  --secondary-foreground: hsl(210 7% 8.6%);
+  --muted: hsl(210 7% 9.4%);
+  --muted-foreground: hsl(210 7% 46.1%);
+  --accent: hsl(215 28% 17.1%);
+  --accent-foreground: hsl(215 100% 52.9%);
+  --destructive: hsl(0 84% 60.2%);
+  --destructive-foreground: hsl(0 0% 100%);
+  --border: hsl(210 7% 14.9%);
+  --input: hsl(215 28% 18.4%);
+  --ring: hsl(215 100% 52.9%);
+  --chart-1: hsl(215 100% 52.9%);
+  --chart-2: hsl(142 76% 36.3%);
+  --chart-3: hsl(47 96% 53.3%);
+  --chart-4: hsl(142 69% 58%);
+  --chart-5: hsl(340 75% 55.7%);
+  --sidebar: hsl(210 7% 9.8%);
+  --sidebar-foreground: hsl(0 0% 90.2%);
+  --sidebar-primary: hsl(215 100% 52.9%);
+  --sidebar-primary-foreground: hsl(0 0% 100%);
+  --sidebar-accent: hsl(215 28% 17.1%);
+  --sidebar-accent-foreground: hsl(215 100% 52.9%);
+  --sidebar-border: hsl(210 7% 26.1%);
+  --sidebar-ring: hsl(215 100% 52.9%);
+  --font-sans: 'Inter', sans-serif;
+  --font-serif: Georgia, serif;
+  --font-mono: ui-monospace, SFMono-Regular, 'SF Mono', Consolas, 'Liberation Mono', Menlo, monospace;
+  --radius: 0.75rem;
+  
+  /* Dark mode procurement colors */
+  --procurement-background: hsl(0 0% 0%);
+  --procurement-success: hsl(142 76% 36.3%);
+  --procurement-warning: hsl(47 96% 53.3%);
+  --procurement-error: hsl(0 84% 60.2%);
+  --procurement-gray-100: hsl(210 40% 90.2%);
+  --procurement-gray-80: hsl(210 40% 70.2%);
+  --procurement-gray-70: hsl(210 7% 60.2%);
+  --procurement-gray-50: hsl(210 7% 46.1%);
+  --procurement-gray-30: hsl(210 7% 26.1%);
+  --procurement-gray-20: hsl(210 7% 14.9%);
+  --procurement-gray-10: hsl(210 7% 9.4%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+
+  /* Custom procurement styles */
+  .procurement-primary {
+    @apply bg-primary text-primary-foreground;
+  }
+
+  .procurement-success {
+    @apply bg-green-500 text-white;
+  }
+
+  .procurement-warning {
+    @apply bg-yellow-500 text-gray-900;
+  }
+
+  .procurement-error {
+    @apply bg-red-500 text-white;
+  }
+
+  .procurement-card {
+    @apply bg-card border border-border rounded-lg shadow-sm;
+  }
+
+  .procurement-table-header {
+    @apply bg-muted/50 text-muted-foreground text-xs font-medium uppercase tracking-wider;
+  }
+}
